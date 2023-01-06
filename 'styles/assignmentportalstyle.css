@@ -8,21 +8,20 @@ header {
     background-color: cadetblue;
     text-align: center;
     border-radius: 0.5em;
+    display: flex;
 
 }
 
 h1 {
-    display: inline;
+    position: relative;
+    left: 10%;
     font-size: 3em;    
 }
 
 img {
-    width: 25%;
-    height: 30%;
+    margin: 15px;
     border: 2px solid gray;
-    margin-right: 20px;
-    margin-left: -100px;
-    margin-top: 10px;
+    
 }
 
 h2 {

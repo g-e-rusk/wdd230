@@ -1,0 +1,41 @@
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: cadetblue;
+    text-align: center;
+    border-radius: 0.5em;
+
+}
+
+h1 {
+    display: inline;
+    font-size: 3em;    
+}
+
+img {
+    width: 25%;
+    height: 30%;
+    border: 2px solid gray;
+    margin-right: 20px;
+    margin-left: -100px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+main {
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 0.5em;;
+}

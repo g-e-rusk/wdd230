@@ -1,0 +1,22 @@
+@media (min-width: 1000px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #section1-info {
+        grid-column: 1/2;
+    }
+
+    #section2-info {
+        grid-column: 2/3;
+    }
+
+
+    #section3-info {
+        grid-column: 3/4;
+        margin-top: 0;
+    }
+}

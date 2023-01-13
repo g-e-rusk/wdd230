@@ -1,0 +1,22 @@
+@media only screen and (min-width: 32.5em) {
+    
+    h1 {
+        position: relative;
+        left: 10%;
+        font-family: 'Playfair Display SC', serif;
+        font-size: 3em;    
+    }
+
+    header {
+        border-radius: 0.5em;
+        display: flex;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        border-radius: 0.5em;;
+    }
+}

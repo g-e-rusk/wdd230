@@ -31,6 +31,11 @@ main {
     font-family: 'EB Garamond', serif;
 }
 
+ul, li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 footer {
     background-color: cadetblue;
     text-align: center;

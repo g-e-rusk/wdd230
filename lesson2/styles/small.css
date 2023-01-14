@@ -29,6 +29,7 @@ h3, h4 {
 h3 {
     background-color:rgba(44, 43, 104, 0.61);
     color: whitesmoke;
+    letter-spacing: 2px;
 }
 h2, p, a {
     font-family: 'Josefin Sans', sans-serif; 
@@ -59,7 +60,8 @@ main {
 section {
     background-color: rgba(102, 101, 119, 0.089);
     border: lightslategray 3px solid;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     margin-bottom: 20px;
 }
 

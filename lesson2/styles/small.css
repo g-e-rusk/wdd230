@@ -66,8 +66,11 @@ section {
 }
 
 section img {
-    width: 100%;
+    width: 97%;
     padding-top: 20px;
+    margin-left: 6px;
+    border: lightslategray 2px solid;
+    justify-self: center;
 }
 
 section p, section a {

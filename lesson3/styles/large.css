@@ -1,0 +1,42 @@
+@media (min-width: 950px) {
+        
+    header .title {
+        font-size: 3em;
+        }
+
+    nav a {
+        font-size: 2em;
+        }
+        
+        .fonts table, .fonts th, .fonts tr {
+            padding-top: 20px;
+            padding-bottom: 30px;
+            padding-left: 50px;
+            padding-right:50px;
+        }
+        
+        .header, .primary, .footer, .head1, .head2, .head3, .text {
+            padding: 15px;
+        }
+        
+        .header1, .primary1, .footer1, .head11, .head21, .head31, .text1 {
+            padding: 15px;
+        }
+        
+        .header1 {
+            font-size: 40px;;
+        }
+        
+        .primary1, .head11 {
+            font-size: 30px;
+        }
+        
+        .footer1, .head31 {
+            font-size: 20px;
+        }
+        
+        .head21 {
+            font-size: 25px;
+        }
+        
+}

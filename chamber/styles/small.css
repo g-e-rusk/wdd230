@@ -1,0 +1,194 @@
+body {
+    max-width: 100%;
+    background-color: #EBE7DE;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    color: #B58F40;
+}
+.header {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.logo, .social{
+    width: 50%;
+}
+
+.logo {
+    padding: 15px;
+}
+
+.social {
+    padding-left: 10px; 
+}
+
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #B58F40;
+}
+nav {
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: #000000;
+    font-family: 'Bree Serif', serif;
+}
+
+nav ul {
+    list-style: none;
+    /*margin: 0;
+    padding: 0;*/
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2vw;
+    text-decoration: none;
+    color: #B58F40;
+}
+
+nav ul li.active a {
+    background-color:#B58F40;
+    color: #555;
+}
+
+
+nav ul li a:hover {
+    background-color: #B58F40;
+    color: #000000;
+}
+
+nav ul {
+    display: none;
+}
+
+nav.ul {
+    display: block;
+}
+
+.current-date {
+    text-align: center;
+    font-size: 0.7em;
+    background-color: #000000dc;
+    color:#B58F40;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero {
+    height: 150px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0F4411;
+    color:#EBE7DE;
+}
+
+.news {
+    height: 150px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0F4411;
+    color:#EBE7DE;
+}
+
+.event {
+    height: 150px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0F4411;
+    color:#EBE7DE;
+}
+
+.weather {
+    height: 150px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0F4411;
+    color:#EBE7DE;
+}
+
+.join {
+    display: none;
+}
+
+#spotlight {
+    height: 200px;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    padding: 10px;
+    background: #0F4411;
+    color:#EBE7DE;
+    margin-bottom: 10px;
+}
+
+.spotlight1, .spotlight2 {
+    
+    height: 75px;
+    border: 1px solid #000000;
+    padding: 10px;
+
+}
+
+.spotlight3 {
+    display: none;
+}
+
+footer {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000000;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    color: #B58F40;
+}
+
+.footer-logo {
+    padding: 5px;
+    width: 10%;
+}
+
+.footer-phone {
+    color: #B58F40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #B58F40;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+footer h4, p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+.base-footer {
+    padding: 5px;
+    border-top:1px solid #555;
+    font-family: 'Bree Serif', serif;
+    font-size: xx-small;
+
+}
+

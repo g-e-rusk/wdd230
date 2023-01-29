@@ -1,0 +1,55 @@
+@media only screen and (min-width: 35rem) {
+    .header {
+        font-size: 2em;
+    }
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero, .news, .join {
+        align-self: stretch
+    }
+
+
+    #spotlight {
+        align-self: stretch;
+    }
+
+    .spotlight1, .spotlight2 {
+        margin: 5px;
+    }
+
+
+    .join {
+        display: flex;
+        height: 150px;
+        border: 1px solid #000000;
+        margin-top: 5px;
+        padding: 10px;
+        background: #0F4411;
+        color: #EBE7DE;
+        order: 1;
+    }
+
+    .event, .weather {
+        align-items: flex-end;
+        align-self: stretch;
+        order: 2;
+    }  
+
+
+    footer {
+        display: block;
+    }
+
+
+    .base-footer {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+}

@@ -1,35 +1,73 @@
 body {
+    margin: 0 auto;
     max-width: 100%;
     background-color: #EBE7DE;
 }
 
-header {
+.banner {
+    background:#0F4411;
+}
+
+.banner-content {
+    padding: 12px;
+    max-width: 500px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.banner-text p {
+    margin-left: 45px;
+    line-height: 1;
+    font-family: 'Bree Serif', serif;
+    font-size: .65rem;
+    color: #EBE7DE;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #EBE7DE
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     background-color: #000000;
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
     color: #B58F40;
+    margin: 0;
 }
 .header {
-    font-size: 1.5em;
+    font-size: 1em;
     padding: 10px;
 }
 
-.logo, .social{
-    width: 50%;
-}
-
 .logo {
+    width: 60%;
     padding: 15px;
 }
 
-.social {
+.social img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    margin-left: 15px;
     padding-left: 10px; 
+    width: 25%;
+}
+
+.social1 img {
+    grid-column: 1/2;
+}
+
+.social2 img {
+    grid-column: 2/3;
 }
 
 nav button {
-    margin: .2rem 2vw;
+    margin: 23px;
     background: transparent;
     border: none;
     font-size: 2rem;
@@ -37,15 +75,12 @@ nav button {
 }
 nav {
     margin: 0 auto;
-    max-width: 760px;
     background-color: #000000;
     font-family: 'Bree Serif', serif;
 }
 
 nav ul {
     list-style: none;
-    /*margin: 0;
-    padding: 0;*/
 }
 
 nav ul li a {
@@ -64,6 +99,7 @@ nav ul li.active a {
 nav ul li a:hover {
     background-color: #B58F40;
     color: #000000;
+    transition: transform 1.2s;
 }
 
 nav ul {
@@ -75,19 +111,91 @@ nav.ul {
 }
 
 .current-date {
+    grid-column: span 4;
     text-align: center;
     font-size: 0.7em;
-    background-color: #000000dc;
+    background-color:rgb(61, 61, 61);
     color:#B58F40;
     padding: 5px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.hero {
+
+#hero h4 {
+    position: absolute;
+    z-index: 1;
+    color:#EBE7DE;
+    padding: 12px;
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    background-color: #0F4411;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 1px 1px 1px #555;
+    font-size: .75rem;
+    
+}
+
+#hero img {
+    max-width: 97%;
+    padding: 5px;
+}
+
+
+.herojoin {
+    background-color: black;
+    font-family: 'Bree Serif', serif;
+    font-size: .8rem;
+    color:#B58F40;
+    position: absolute;
+    right: 20px;
+    top: 300px;
+    
+}
+
+
+#news {
+    
+    border: 1px solid #000000;
+    margin-top: 5px;
+    padding: 15px;
+    background: #0F4411;
+    color:#EBE7DE;
+}
+
+#news h4, #news h5 {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+}
+
+#news p {
+    font-family: 'Bree Serif', 'serif';
+    margin-bottom: 10px;
+}
+
+#event {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;;
+}
+
+#event h4 {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+}
+
+#event p {
+    font-family: 'Bree Serif', 'serif';
+    margin-bottom: 10px;
+}
+
+#event img {
+    width: 30%;
+}
+
+#weather {
     height: 150px;
     border: 1px solid #000000;
     margin-top: 10px;
@@ -96,39 +204,11 @@ main {
     color:#EBE7DE;
 }
 
-.news {
-    height: 150px;
-    border: 1px solid #000000;
-    margin-top: 10px;
-    padding: 10px;
-    background: #0F4411;
-    color:#EBE7DE;
-}
-
-.event {
-    height: 150px;
-    border: 1px solid #000000;
-    margin-top: 10px;
-    padding: 10px;
-    background: #0F4411;
-    color:#EBE7DE;
-}
-
-.weather {
-    height: 150px;
-    border: 1px solid #000000;
-    margin-top: 10px;
-    padding: 10px;
-    background: #0F4411;
-    color:#EBE7DE;
-}
-
-.join {
+#join {
     display: none;
 }
 
 #spotlight {
-    height: 200px;
     border: 1px solid #000000;
     margin-top: 10px;
     padding: 10px;
@@ -137,12 +217,28 @@ main {
     margin-bottom: 10px;
 }
 
-.spotlight1, .spotlight2 {
+.patty-card img, .roccos-card img {
+    width: 50%;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #555;
     
-    height: 75px;
-    border: 1px solid #000000;
-    padding: 10px;
+}
 
+.patty-card h5, .spotlight1 h4, .roccos-card h5, .spotlight2 h4 {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+}
+
+.patty-card, .roccos-card {
+    font-family: 'Bree Serif', 'serif';
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px dashed black;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color:#EBE7DE;
+    color:rgb(61, 61, 61);
 }
 
 .spotlight3 {

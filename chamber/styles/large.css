@@ -1,4 +1,13 @@
 @media only screen and (min-width: 64rem) {
+    .banner-content {
+        padding: 16px;
+        max-width: 750px;
+    }
+    
+    .banner-text p {
+        font-size: 1.25rem;
+    }
+    
     nav button {
         display: none;
     }

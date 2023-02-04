@@ -14,59 +14,104 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Adlam+Unjoined&display=swap" rel="stylesheet">
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
-
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p>🤝🏼 Come join us for the chamber "Meet & Greet" Wednesday at 7:00 p.m.</p>
+            </div>
+            <button class="banner-close" type="button">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </button>
+        </div>
+    </div>
     <header>
         <a id="logo_link" href="index.html">
         <img class="logo" src="images/logo_small.png" alt="Elk Grove Commerce Chamber logo"></a>
         <h1 class="header">Elk Grove Commerce Chamber</h1>
-        <a href="https://www.facebook.com"><img class="social" src="images/facebook_white.png" alt="Facebook link"></a>
-        <a href="https://www.whatsapp.com"><img class="social" src="images/whatsapp_white.png" alt="Whatsapp link"></a>
+        <div class="social">
+        <a href="https://www.facebook.com"><img class="social1" src="images/facebook_white.png" alt="Facebook link"></a>
+        <a href="https://www.whatsapp.com"><img class="social2" src="images/whatsapp_white.png" alt="Whatsapp link"></a>
+        </div>
         <nav>
             <button id="hamburgerBtn">&#9776;</button>
             <ul id="nav">
-                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Contact</a></li>
         </ul>
         </nav>
+        <div class="current-date">
+            <span id="currentdate"></span>
+        </div>
     </header>
-
-    <div class="current-date">
-        <span id="currentdate"></span>
-    </div>
-    
-        
+         
     <main>
 
-        <div class="hero">
-            <h4>Hero with site name and call to action</h4>
-    </div>
-        <div class="event">
-            <h4>Event</h4>
+        <div id="hero">
+            <h4>Welcome to Elk Grove, California</h4>
+            <img src="images/heropark.jpg" alt="Peaceful park setting with trees and grass">
+            <section class="hero">
+                <button class="herojoin">Join the Commerce Chamber</button>
+            </section>
+        </div>
+
+        <div id="event">
+            <h4>Ribbon Cutting Ceremony</h4>
+                <img src="images/ribboncutting.png" alt="ribbon cutting ceremony">
+                <p>Join us as we celebrate the Grand Opening of Big Joe's Auto Parts.<br>
+                Ceremony will take place at 10 a.m.</p>
             </div>
         
-        <div class="weather">
+        <div id="weather">
             <h4>Weather</h4>
         </div>
 
-        <div class="news">
+        <div id="news">
             <h4>News Release</h4>
+            <h5>Local schools have been given a generous donation of $1 million dollars each by
+                Mr. Hugh L. Jones</h5>
+            <p>  Mr. Jones first came to Elk Grove in 1968 as a young salesman for
+                the Torax Company.  Upon finding the area very condusive to family life, Mr. Jones decided
+                to stay and raise his family.  He worked in various odd jobs until in 1986 he opened his first 
+                restaurant along Main Street.  As the popularity of Hugh's Cafe spread, another location was opened
+                in Northern Elk Grove.  Some time later, in 1999, Mr. Jones started to franchise his Cafes, and now there
+                are over 100 locations nationwide.  Mr. Jones retired in 2002 and has continued to help in revitalization
+                projects, especially in the schools.  With this sizeable donation, computers will be purchased for all
+                school-aged children, and certain properties will be remodeled to bring them into the 21st century.  </p>
         </div>
-        <div class="join">
+
+        <div id="join">
                 <h4>Join</h4>
         </div>
+
         <div id="spotlight">
             <div class="spotlight1">
                 <h4>Spotlight 1</h4>
+                <section class="patty-card">
+                <h5>Patty's Play School</h5>
+                <img src="images/kidblock.jpg" alt="picture of blocks and child">
+                <p> Miss Patty can't wait to welcome you to her Play School.  For children aged 2 to 5 years,
+                    Patty's Play School will help your learn the skills necessary for grade school and beyond.
+                    <br>Contact Ms. Patty at (916) 555-9786.
+                </p>
+            </section>
             </div>
             <div class="spotlight2">
                 <h4>Spotlight 2</h4>
+                <section class="roccos-card">
+                    <h5>Rocco's Ice Cream</h5>
+                    <img src="images/icecream.jpg" alt="flavors of ice cream">
+                    <p>Rocco's Ice Cream has been a staple of Downtown Elk Grove for 50 years!  Come try some today.</p>
+                </section>
             </div>
             <div class="spotlight3">
                 <h4>Spotlight 3</h4>
@@ -80,9 +125,9 @@
         <h4>Elk Grove Commerce Chamber</h4>
         <p>123 Main Street</p>
         <p>Elk Grove, CA 95624</p>
-        <a href="mailto:info@egcc.org">info@egcc.org</a>
-        <p class="footer-phone">(916) 555-4321</p>
-        <a href="https://goo.gl/maps/Hg4XRsJMBYVrU9Bu9">Map</a>
+        <a href="mailto:info@egcc.org">📫info@egcc.org</a>
+        <p class="footer-phone">📞(916) 555-4321</p>
+        <a href="https://goo.gl/maps/Hg4XRsJMBYVrU9Bu9">📍Map</a>
         <div class="base-footer">
         <p>&copy;<span id="currentyear"></span> Elk Grove Commerce Chamber</p>
         <p>Geri Rusk</p>

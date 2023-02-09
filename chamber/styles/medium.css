@@ -1,4 +1,4 @@
-@media only screen and (min-width: 35rem) {
+@media only screen and (min-width: 32rem) {
     .header {
         font-size: 2em;
     }
@@ -13,15 +13,23 @@
         font-size: 1em;
     }
 
-    .social img { 
-        width: 17%;
+    .current-date {
+        font-size: 1.2em;
+    }
+
+    nav button {
+        font-size: 3rem;
+        margin-right: -50px;
+    }
+
+    nav img {
+        width: 60%;
+        margin-top: 60px;
     }
 
     main {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-
+        grid-template-columns: 50% 50%;
     }
 
     #hero h4 {
@@ -32,30 +40,40 @@
     }
     
     #hero img {
-        max-width: 100%;
         grid-column: 1/3;
-        grid-row: 1/2;
+        width: 200%;
+        
+    }
+
+    .herojoin {
+        font-size: 1.2rem;
+        right: 30px;
+        top: 675px;
+        
     }
 
     #news {
         grid-column: 1/3;
-        grid-row: 2/3;
+        padding: 10px;
     }
 
     #spotlight {
         grid-column: 1/3;
         grid-row: 3/4;
+        display: flex;
     }
 
+
+    
     .spotlight1, .patty-card {
         grid-column: 1/2;
+        width: 85%;
     }
 
     .spotlight2, .rocco-card {
         grid-column: 2/3;
+        width: 85%;
     }
-
-
 
     #event {
         grid-column: 1/2;
@@ -69,6 +87,7 @@
     }
 
     #join {
+        display: block;
         grid-column: 1/3;
         grid-row: 4/5; 
         height: 150px;

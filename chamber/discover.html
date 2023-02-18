@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Elk Grove | Elk Grove Commerce Chamber</title>
+    <meta name="description"
+        content="Discover the joys of living and working in Elk Grove, California">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">           
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Adlam+Unjoined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p>🤝🏼 Come join us for the chamber "Meet & Greet" Wednesday at 7:00 p.m.</p>
+            </div>
+            <button class="banner-close" type="button">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </button>
+        </div>
+    </div>
+    <header>
+        <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo_small.webp" alt="Elk Grove Commerce Chamber logo"></a>
+        <h1 class="header">Elk Grove Commerce Chamber</h1>
+        <nav>
+        <a href="https://www.facebook.com"><img src="images/facebook_white.png" alt="Facebook link"></a>
+        <a href="https://www.whatsapp.com"><img src="images/whatsapp_white.png" alt="Whatsapp link"></a>
+        
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="nav">
+                <li><a href="https://g-e-rusk.github.io/wd230/chamber/index.html">Home</a></li>
+                <li><a href="https://g-e-rusk.github.io/wd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="current-date">
+            <span id="currentdate"></span>
+        </div>
+    </header>
+
+    
+    <div id="discover">
+        <img src="images/placeholder.jpg" data-src="images/ruralcommunity.jpg" alt="Rural Community sign">
+        <p class="text">Welcome to the rural community of Elk Grove, California.  Here you will find a mix of 
+            country living and the urban sprawl we have come to expect from the suburbs.  There is a good mix of 
+            fields, farm life, city dwelling structures, large businesses and plenty of "mom and pop" shops.
+        </p>
+        <img src="images/placeholder.jpg" data-src="images/cows1.jpg" alt="Cows">
+        <p class="text">Nestled among the suburban housing communities, local shopping and eateries, don't be
+            surprised to see all manner of country life.  From cows to chickens, goats and sheep, occasional llamas,
+            pigs, plenty of squirrels, birds, possums and skunks make Elk Grove their home.  If you listen carefully,
+            you might hear the occasional howl of a lonely coyote.
+        </p>
+        <img src="images/placeholder.jpg" data-src="images/elkmural.jpg" alt="Elk mural">
+        <p class="text">Elk Grove takes it name from the Tule Elk that once inhabited many regions of California.  Today, 
+            you can see Tule Elk at Point Reyes as they have an elk preserve there.  We are proud of the species
+            that once called this land home and we remember them in our name and the many represenations we have of
+            elk around the city.
+        </p>
+        <img src="images/placeholder.jpg" data-src="images/rhoadsschool.jpg" alt="Rhodes School">
+        <p class="text">The Rhoads School was founded in the 1850's by pioneers who were working and residing at Sutter's Fort.
+            The school's name is rumored to be in honor of John P. Rhoads whose wagon train travelled  part of the way west with
+            the famed Donner Party.  The Rhoads wagon train arrived in the Sacramento Valley and were safe from the 
+            surprise winter storms which ravished the Donner party.  John P. Rhoads made three rescue missions to the Donner
+            party.  This is a wonderful historical piece right in the heart of Elk Grove, and school children today are able 
+            to experience life in a one-room schoolhouse year round.
+        </p>
+        <img src="images/placeholder.jpg" data-src="images/parktrees.jpg" alt="Park with trees">
+        <p class="text">Elk Grove thrives on community, just as these mighty trees thrive on a strong, interconnected
+            root system.  By bringing together families in work and play, we continue to develop a sense of unity within
+            our community.  
+        </p>
+        <img src="images/placeholder.jpg" data-src="images/sportspark.jpg" alt="Sports Park">
+        <p class="text">In addition to the many natural resources, we pride ourselves on the many extracurricular
+            activities we offer through our community services district.  We have Olympic-sized competition pools, various
+            indoor and outdoor sports leagues, and a multitude of classes ranging from adult education, to preschool programs,
+            we strive to care for each and every citizen in our community.
+        </p> 
+    </div>
+    
+    <p class="visitnum">Number of Visits: <span id="visits"></span></p>
+
+    <footer>
+        <img class="footer-logo" src="images/logo_small.webp" alt="Elk Grove Commerce Chamber logo">
+        <h4>Elk Grove Commerce Chamber</h4>
+        <p>123 Main Street</p>
+        <p>Elk Grove, CA 95624</p>
+        <a href="mailto:info@egcc.org">📫info@egcc.org</a>
+        <p class="footer-phone">📞(916) 555-4321</p>
+        <a href="https://goo.gl/maps/Hg4XRsJMBYVrU9Bu9">📍Map</a>
+        <div class="base-footer">
+        <p>&copy;<span id="currentyear"></span> Elk Grove Commerce Chamber</p>
+        <p>Geri Rusk</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="date"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

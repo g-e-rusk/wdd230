@@ -250,6 +250,35 @@ main {
     display: none;
 }
 
+#discover img {
+    position: relative;
+    margin: 3% auto;
+    margin-left: 4px;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px #222222;
+    width: 97%;
+
+}
+
+  .text {
+    margin: 1% auto;
+    background-color: #0F4411;
+    color: #EBE7DE;
+    font-family: 'Bree Serif', 'serif';
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+    border: 1px dashed #B58F40;
+    border-radius: 15px;
+  }
+
+  .visitnum {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px;
+  }
+
 footer {
     display: block;
     margin: 0 auto;

@@ -147,6 +147,23 @@
         width: 85%;
     }
 
+    #discover img {
+        margin-left: 300px;
+        width: 60%;
+        height: 60%;
+    }
+
+    .text {
+        margin: 1% auto;
+        margin-left: 90px;
+        margin-right: 90px;
+        font-size: 20px;
+        padding: 10px;
+      }
+
+      .visitnum {
+        font-size: 20px;
+      }
 
     
 }

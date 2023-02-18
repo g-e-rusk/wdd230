@@ -27,3 +27,46 @@ if (date == 1 || date == 2) {
     document.querySelector(".banner-close").addEventListener("click", function() {
         this.closest(".banner").style.display = "none";
 });
+
+
+const imagesToLoad = document.querySelectorAll("img[data-src]");
+
+const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+        image.removeAttribute("data-src");
+    };
+};
+
+const imageOptions = {
+    threshold: 0,
+    rootMargin: '0px 0px 50px 0px'
+};
+
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver ((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    }, imageOptions);
+    imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} else {
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+
+const visitsDisplay = document.querySelector("#visits");
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = `This is your first visit!`;
+}
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);

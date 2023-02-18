@@ -98,6 +98,28 @@
         color: #EBE7DE;
     }
 
+    #discover img {
+        width: 75%;
+        height: 75%;
+        margin-left: 90px;
+    }
+
+    #discover:hover img {
+        box-shadow: 0 0 50px #000000;
+    }
+
+    .text {
+        margin: 1% auto;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 16px;
+        padding: 5px;
+      }
+    
+      .visitnum {
+        font-size: 16px;
+      }
+
     footer {
         display: block;
     }

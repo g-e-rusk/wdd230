@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Elk Grove Commerce Chamber</title>
+    <meta name="description"
+        content="Join the Elk Grove Commerce Chamber to prokmote your business and learn how to serve the needs of those in the community">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">           
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Noto+Sans+Adlam+Unjoined&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <p>🤝🏼 Come join us for the chamber "Meet & Greet" Wednesday at 7:00 p.m.</p>
+            </div>
+            <button class="banner-close" type="button">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </button>
+        </div>
+    </div>
+    <header>
+        <a id="logo_link" href="index.html">
+        <img class="logo" src="images/logo_small.webp" alt="Elk Grove Commerce Chamber logo"></a>
+        <h1 class="header">Elk Grove Commerce Chamber</h1>
+        <nav>
+        <a href="https://www.facebook.com"><img src="images/facebook_white.png" alt="Facebook link"></a>
+        <a href="https://www.whatsapp.com"><img src="images/whatsapp_white.png" alt="Whatsapp link"></a>
+        
+            <button id="hamburgerBtn">&#9776;</button>
+            <ul id="nav">
+                <li><a href="https://g-e-rusk.github.io/wdd230/chamber/index.html">Home</a></li>
+                <li><a href="https://g-e-rusk.github.io/wdd230/chamber/discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="https://g-e-rusk.github.io/wdd230/chamber/join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="current-date">
+            <span id="currentdate"></span>
+        </div>
+    </header>
+
+    
+    <main>
+        
+        <h2 class="joinpage">Come join the Elk Grove Commerce Chamber!</h2>
+        <h3 class="joinpage">Various levels of membership - find the perfect one for you</h3>
+        <div id="joinpage">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Business Entry Form</legend>
+                <label class="top">Business Name* <input type="text" name="businessname" required></label>
+                <label class="top">Contact Person First Name* <input type="text" name="fname" required></label>
+                <label class="top">Contact Person Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Contact Person Title <input type="text" name="title" pattern="[A-Za-z - \s]{7,}" title="Business Title of Contact Person"></label>
+                <label class="top">Contact Person Email* <input type="email" name="email" placeholder="name@businessname.com" required></label>
+                <label class="top">Contact Person Cell Phone Number* <input type="tel" name="phone" placeholder="1235551234" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Options</legend>
+                <label class="sbs"><input type="radio" name="membership" value="npmember"> Non-Profit Member</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Member</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Member</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Member</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Business Description</legend>
+                <label class="top">Please tell us about your business: <textarea id="busdescription" name="busdescription" rows="8" cols="50"></textarea></label>
+            </fieldset>
+
+            <input type="hidden" id="formSubmit" name="formSubmit" value="currentdate">
+
+            <input type="submit" value = "Join the Elk Grove Commerce Chamber" class="submitBtn">
+
+        </form>
+    </div>
+    <div class="jointable">
+        <table>
+            <caption>**To establish Non-Profit status, 503&copy; form must be submitted to the Commerce Chamber Main Office</caption>
+            <thead>
+                <tr>
+                    <th class="header" colspan="5">EGCC Membership Options
+                    </th>
+                </tr>
+                <tr>
+                    <th class="title"></th>
+                    <th class="title">Non-Profit**</th>
+                    <th class="title">Bronze</th>
+                    <th class="title">Silver</th>
+                    <th class="title">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Fee per month</th>
+                    <td>$0</td>
+                    <td>$5</td>
+                    <td>$10</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <th>Advertising</th>
+                    <td>✔</td>
+                    <td>Directory</td>
+                    <td>Directory<br>Print</td>
+                    <td>Directory<br>Print<br>Website</td>              
+                </tr>
+                <tr>
+                    <th>Event Discounts</th>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔<br>$5 fee/person</td>
+                    <td>✔</td>
+                </tr>
+                <tr>
+                    <th>Marquee Listing</th>
+                    <td>2x a year</td>
+                    <td>1x a year</td>
+                    <td>2x a year</td>
+                    <td>4x a year</td>
+                </tr>
+                <tr>
+                    <th>Sponsorships</th>
+                    <td>✔</td>
+                    <td>✔<br>$100/min deposit</td>
+                    <td>✔<br>$50/min deposit</td>
+                    <td>✔<br>$20/min deposit</td>
+                </tr>
+                <tr>
+                    <th>Training</th>
+                    <td>✔</td>
+                    <td>❌</td>
+                    <td>✔<br>$10 fee/person</td>
+                    <td>✔</td>
+                </tr>
+                
+                
+
+            </tbody>
+        </table>
+    </div>
+    </main>
+    
+    <p class="visitnum">Number of Visits: <span id="visits"></span></p>
+
+    <footer>
+        <img class="footer-logo" src="images/logo_small.webp" alt="Elk Grove Commerce Chamber logo">
+        <h4>Elk Grove Commerce Chamber</h4>
+        <p>123 Main Street</p>
+        <p>Elk Grove, CA 95624</p>
+        <a href="mailto:info@egcc.org">📫info@egcc.org</a>
+        <p class="footer-phone">📞(916) 555-4321</p>
+        <a href="https://goo.gl/maps/Hg4XRsJMBYVrU9Bu9">📍Map</a>
+        <div class="base-footer">
+        <p>&copy;<span id="currentyear"></span> Elk Grove Commerce Chamber</p>
+        <p>Geri Rusk</p>
+        <p>WDD 230 Project</p>
+        <p>Last Modified: <span id="date"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

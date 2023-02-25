@@ -165,5 +165,163 @@
         font-size: 20px;
       }
 
+      .joinpage {
+        text-align: center;
+        grid-column: 1/4;
+        font-family: 'Bree Serif', 'serif';
+        margin: 0.5% auto;
+      }
+    
+      .joinpage h2 {
+        font-size: 3rem;
+      }
+    
+      .joinpage h3 {
+        font-size: 2rem;
+      }
+    
+    
+    #joinpage {
+        grid-column: 2/3;
+        min-height: 20rem;
+        margin: 3% auto;
+        margin-left: 4px;
+        width: 100%;
+        max-width: 40rem;
+    }
+    
+    form fieldset {
+        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        border: 1px solid #0F4411;
+        border-radius: 10px;
+        padding: 0.5rem 10%;
+    }
+
+    form label.top::placeholder {
+        color: black;
+    }
+    
+    form legend {
+        color: #0F4411;
+        margin: 0 1rem;
+        padding: 0 .5rem;
+    }
+    
+    form label.top {
+        display: block;
+        padding-top: 1rem;
+        color: black;
+        font-size: 1.15rem;
+    }
+    
+    form label.top input, form label.top select {
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #B58F40;
+        border-radius: 4px;
+        padding: .75rem;
+        color: black;
+        width: 100%;
+        max-width: 30rem;
+        background-color: #B58F40;
+    }
+    
+    form label.sbs {
+        font-size: 1.5rem;
+        display: block;
+        padding: .75rem 0;
+        color: black;
+    }
+
+    form label.sbs.radio {
+        font-size: 2rem;
+    }
+
+    
+    form input.submitBtn {
+        border: none;
+        background-color: #0F4411;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    
+    table {
+        float: right;
+        margin-top: 475px;
+        margin-right: 150px;
+    }
+    
+    th {
+        font-family:'Bree Serif', serif;
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    td {
+        font-family:'Bree Serif', serif;
+        font-size: .7rem;
+        letter-spacing: 1px;
+    }
+    
+    
+    tr:nth-child(even) {
+        background-color: #B58F40;
+    }
+
+    tr:nth-child(odd) {
+        border: none;
+    }
+    
+    
+    .jointable .header, .jointable .title {
+        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    }
+    
+    .jointable .header {
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #0F4411;
+        border: none;
+        color:#EBE7DE;
+        letter-spacing: 2px;
+    }
+    
+    .jointable .title {
+        text-align: center;
+        font-size: .8rem;
+        border: none;
+        background-color: #0F4411;
+        color: #EBE7DE;
+        letter-spacing: 2px;
+    }
+    
+    table, th, td {
+        border-collapse: collapse;
+        padding: 6px;
+        text-align: center;
+    }
+    
+    .jointable caption {
+        caption-side: bottom;
+        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .thanks {
+        background-color: white;
+        grid-column: 1/4;
+    }
+
+    .thanks img {
+        position: relative;
+        margin: 0 auto;
+    }
     
 }

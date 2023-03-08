@@ -1,0 +1,24 @@
+body {
+    margin: 0 auto;
+    padding: 5%;
+    background-color:beige;
+    width: 50%;
+}
+
+h1 {
+    font-family: 'Quando', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color:darkblue;
+}
+
+p, figcaption {
+    font-family: 'Judson', serif;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Quando', serif;
+    font-size: 1.25rem; 
+}
+

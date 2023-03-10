@@ -130,7 +130,7 @@ main {
 
 #hero img {
     width: 97%;
-    padding: 5px;
+    border: 5px solid black;
 }
 
 
@@ -142,7 +142,9 @@ main {
     position: absolute;
     right: 20px;
     top: 300px;
-    
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 10px;;
 }
 
 
@@ -191,23 +193,26 @@ main {
     background: #0F4411;
     color:#EBE7DE;
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-}
-
-#weather img {
-    width: 25%;
-    padding-right: 30px;
+    letter-spacing: 1.5px;
 }
 
 #weather p {
     font-family: 'Bree Serif', 'serif';
+    letter-spacing: 1px;
 }
 
-.weathercontainer p {
-    font-size: 1.5rem;
-    display: flex;  
-    justify-content: center;  
-    align-items: flex-start;
+.weathercontainer {
+    position: relative;
+    float: right;
+    padding-right: 15%;
+    letter-spacing: 1px;
 }
+
+.weathercontainer p{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
 
 #join {
     display: none;
@@ -220,18 +225,22 @@ main {
     background: #0F4411;
     color:#EBE7DE;
     margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .patty-card img, .roccos-card img {
     width: 50%;
     margin: 5px;
     border-radius: 10px;
-    box-shadow: 2px 2px 2px #555;
-    
+    box-shadow: 2px 2px 2px #555; 
 }
 
-.patty-card h5, .spotlight1 h4, .roccos-card h5, .spotlight2 h4 {
+.patty-card h5, .spotlight1 h4, .roccos-card h5 {
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+}
+
+.spotlight1 h4 {
+    text-align: center;
 }
 
 .patty-card, .roccos-card {
@@ -244,6 +253,7 @@ main {
     border-radius: 30px;
     background-color:#EBE7DE;
     color:rgb(61, 61, 61);
+    margin-bottom: 7px;
 }
 
 .spotlight3 {
@@ -417,6 +427,7 @@ table, th, td {
 }
 
 .thanks {
+    font-family: 'Bree Serif', serif;
     text-align: center;
     margin: 0.5% 0.5%;;
     background-color: white;
@@ -539,6 +550,77 @@ div.cards h4 {
 .list section:nth-child(even) {
 	background-color:#aaa;
 }
+
+#contact {
+    font-family:'Noto Sans Adlam Unjoined', sans-serif;
+    text-align: center;
+}
+
+#contact h3 {
+    font-family:'Noto Sans Adlam Unjoined', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact p, #contact a {
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2%;
+}
+
+#contact a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#contactpage p {
+    font-family: 'Bree Serif', serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 2%;
+}
+
+form label.main::placeholder {
+    color: black;
+}
+
+form label.main {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+}
+
+form label.main input, form label.main select {
+    display: block;
+    font-size: .8rem;
+    border: solid 1px #B58F40;
+    border-radius: 4px;
+    padding: .75rem;
+    color: black;
+    width: 97%;
+    max-width: 20rem;
+    background-color: #B58F40;
+}
+
+#busdescription {
+    width: 100%;
+}
+
+form input.contactSubmitBtn {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    border: none;
+    background-color: #0F4411;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2% 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
 
 footer {
     display: block;

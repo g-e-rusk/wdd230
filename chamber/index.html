@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <script src="scripts/main.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
                 <li><a href="https://g-e-rusk.github.io/wdd230/chamber/discover.html">Discover</a></li>
                 <li><a href="https://g-e-rusk.github.io/wdd230/chamber/directory.html">Directory</a></li>
                 <li><a href="https://g-e-rusk.github.io/wdd230/chamber/join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="https://g-e-rusk.github.io/wdd230/chamber/contact.html">Contact</a></li>
         </ul>
         </nav>
         <div class="current-date">
@@ -60,7 +61,9 @@
             <h4>Welcome to Elk Grove, California</h4>
             <img src="images/heropark1.jpg" alt="Peaceful park setting with trees and grass">
             <div class="hero">
-                <button class="herojoin">Join the Commerce Chamber</button>
+                <form action="C>
+                <button type="submit" class="herojoin">Join the Commerce Chamber</button>
+            </form>
             </div>
         </div>
 
@@ -72,25 +75,25 @@
             </div>
         
         <div id="weather">
-            <h4>Weather</h4>
+            <h4>Weather At a Glance</h4>
             <div class="weathercontainer">
-            <img src="images/weather.png" alt="cloud, rain and sun ">
             <p>
-                <span id="temp">39</span>
-                °F</p>
-            <br>
-           <p>Foggy</p>
-        </div>
+                <span id="temp"></span>
+                &deg;F</p>
+            </div>
+            <figure>
+                <img src="" alt="" id="weather-icon">
+                <figcaption></figcaption>
+            </figure>
             <hr>
             <div class="wind">
             <p>
                 Wind Speed:
-                <span id="windspeed">5.8</span>
+                <span id="windspeed"></span>
             mp/h</p>
             <p>
                 Wind Chill:
                 <span id="windchill"></span>
-                °F
             </p>
         </div>
         </div>
@@ -110,12 +113,15 @@
         </div>
 
         <div id="join">
-                <h4>Join</h4>
+                <button class="join" onclick="window.location.href='https://g-e-rusk.github.io/wdd230/chamber/join.html';">Join Here</button>
+                <p class="joinbox"> Would you like to make a difference in your community?  Would you like to have your business featured on our website?  Join the Commerce Chamber today.  Pricing and membership plans to fit every budget!</p>
+
+
         </div>
 
         <div id="spotlight">
             <div class="spotlight1">
-                <h4>Spotlight 1</h4>
+                <h4>~ Business Partner Spotlights ~</h4>
                 <section class="patty-card">
                 <h5>Patty's Play School</h5>
                 <img src="images/kidblock.jpg" alt="picture of blocks and child">
@@ -126,7 +132,7 @@
             </section>
             </div>
             <div class="spotlight2">
-                <h4>Spotlight 2</h4>
+                <h4></h4>
                 <section class="roccos-card">
                     <h5>Rocco's Ice Cream</h5>
                     <img src="images/icecream.jpg" alt="flavors of ice cream">
@@ -134,7 +140,6 @@
                 </section>
             </div>
             <div class="spotlight3">
-                <h4>Spotlight 3</h4>
                 <section class="axel-card">
                     <h5>Axel Dental</h5>
                     <img src="images/dental.jpg" alt="tooth picture">

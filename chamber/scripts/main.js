@@ -18,18 +18,6 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`
 
 
-const date = now.getDay();
-if (date == 1 || date == 2) {
-    document.querySelector(".banner").style.display = "block";
-}else {
-    document.querySelector(".banner").style.display = "none";
-};
-
-    document.querySelector(".banner-close").addEventListener("click", function() {
-        this.closest(".banner").style.display = "none";
-});
-
-
 const imagesToLoad = document.querySelectorAll("img[data-src]");
 
 const loadImages = (image) => {
@@ -61,13 +49,3 @@ if ("IntersectionObserver" in window) {
         loadImages(img);
     });
 }
-
-const visitsDisplay = document.querySelector("#visits");
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit!`;
-}
-numVisits++;
-localStorage.setItem("visits-ls", numVisits);

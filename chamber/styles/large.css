@@ -423,7 +423,7 @@ form label.main {
     font-size: 1.15rem;
 }
 
-form fieldset {
+form fieldset.contact {
     border: none;
 }
 

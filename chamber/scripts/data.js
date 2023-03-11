@@ -18,34 +18,11 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`
 
 
-const date = now.getDay();
-if (date == 1 || date == 2) {
-    document.querySelector(".banner").style.display = "block";
-}else {
-    document.querySelector(".banner").style.display = "none";
-};
-
-    document.querySelector(".banner-close").addEventListener("click", function() {
-        this.closest(".banner").style.display = "none";
-});
-
-const visitsDisplay = document.querySelector("#visits");
-let numVisits = Number(window.localStorage.getItem("visits-ls"));
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = `This is your first visit!`;
-}
-numVisits++;
-localStorage.setItem("visits-ls", numVisits);
-
-
 const url = "data/data.json";
 
 async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
-    //console.table(data.businesses);
     displayBusinessData(data.businesses);
 }
 getBusinessData();

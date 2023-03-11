@@ -142,7 +142,6 @@ main {
     position: absolute;
     right: 20px;
     top: 300px;
-    cursor: pointer;
     padding: 1%;
     border-radius: 10px;;
 }

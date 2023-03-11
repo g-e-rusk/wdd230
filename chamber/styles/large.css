@@ -158,10 +158,6 @@
         margin-left: 15px;
     }
 
-    .spotlight2 h4, .patty-card {
-        margin-top: 40px;
-    }
-
     .axel-card img {
         width: 40%;
         margin: 5px;
@@ -170,7 +166,7 @@
         
     }
     
-    .axel-card h5, .spotlight3 h4 {
+    .axel-card h5 {
         font-family: 'Noto Sans Adlam Unjoined', sans-serif;
     }
     
@@ -185,7 +181,11 @@
         background-color:#EBE7DE;
         color:rgb(61, 61, 61);
         width: 80%;
-        margin-top: 40px;
+        
+    }
+
+    .rocco-card, .spotlight2 h5 {
+        margin-top: 0;
     }
 
     .rocco-card, .spotlight2 {

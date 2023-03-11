@@ -228,6 +228,10 @@ main {
     border-radius: 10px;
 }
 
+.spotlight1 h5, .spotlight2 h5, .spotlight3, h5 {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    font-size: 1rem;
+}
 .patty-card img, .roccos-card img {
     width: 50%;
     margin: 5px;

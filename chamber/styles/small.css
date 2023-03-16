@@ -342,7 +342,7 @@ form label.top input, form label.top select {
     color: black;
     width: 100%;
     max-width: 30rem;
-    background-color: #B58F40;
+    background-color: #c9b280;
 }
 
 form label.sbs {
@@ -585,8 +585,20 @@ div.cards h4 {
     padding: 2%;
 }
 
-form label.main::placeholder {
+form label.main input, form label.main select {
+    display: block;
+    font-size: .8rem;
+    border: solid 1px #B58F40;
+    border-radius: 4px;
+    padding: .55rem;
     color: black;
+    width: 97%;
+    max-width: 20rem;
+    background-color: #c9b280;
+}
+
+form label.main::placeholder {
+    color: whitesmoke;
 }
 
 form label.main {
@@ -596,32 +608,16 @@ form label.main {
     font-size: .8rem;
 }
 
-form label.main input, form label.main select {
-    display: block;
-    font-size: .8rem;
-    border: solid 1px #B58F40;
-    border-radius: 4px;
-    padding: .75rem;
-    color: black;
-    width: 97%;
-    max-width: 20rem;
-    background-color: #B58F40;
-}
-
-#busdescription {
-    width: 100%;
-}
-
 form input.contactSubmitBtn {
     font-family: 'Noto Sans Adlam Unjoined', sans-serif;
     border: none;
     background-color: #0F4411;
     color: white;
     border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 2% 2%;
-    width: 96%;
-    max-width: 20rem;
+    padding: .5rem;
+    margin: 0 0 2%;
+    width: 50%;
+    
 }
 
 
@@ -667,4 +663,3 @@ footer h4, p {
     font-size: xx-small;
 
 }
-

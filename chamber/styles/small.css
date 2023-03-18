@@ -69,7 +69,12 @@ nav img {
 }
 
 nav ul {
+    display: none;
     list-style: none;
+}
+
+nav ul.open {
+    display: block;
 }
 
 nav ul li a {
@@ -91,13 +96,6 @@ nav ul li a:hover {
     transition: transform 1.2s;
 }
 
-nav ul {
-    display: none;
-}
-
-nav.ul {
-    display: block;
-}
 
 .current-date {
     grid-column: span 4;
@@ -218,6 +216,8 @@ main {
 }
 
 #spotlight {
+    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
+    text-align: center;
     border: 1px solid #000000;
     margin-top: 10px;
     padding: 10px;
@@ -227,26 +227,13 @@ main {
     border-radius: 10px;
 }
 
-.spotlight1 h5, .spotlight2 h5, .spotlight3, h5 {
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    font-size: 1rem;
-}
-.patty-card img, .roccos-card img {
+ #spotlight-cards img {
     width: 50%;
-    margin: 5px;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #555; 
-}
+} 
 
-.patty-card h5, .spotlight1 h4, .roccos-card h5 {
-    font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-}
-
-.spotlight1 h4 {
-    text-align: center;
-}
-
-.patty-card, .roccos-card {
+#spotlight-cards {
     font-family: 'Bree Serif', 'serif';
     text-align: center;
     padding-left: 10px;
@@ -256,11 +243,13 @@ main {
     border-radius: 30px;
     background-color:#EBE7DE;
     color:rgb(61, 61, 61);
-    margin-bottom: 7px;
+    margin: .5rem;
 }
 
-.spotlight3 {
-    display: none;
+#spotlight-cards a {
+    text-decoration: none;
+    font-size: .8rem;
+    cursor: pointer;
 }
 
 #discover img {

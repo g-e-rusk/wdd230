@@ -60,23 +60,23 @@
     #spotlight {
         grid-column: 1/3;
         grid-row: 3/4;
-        display: flex;
-    }
-
-    .spotlight1 h4 {
-        font-size: 1.25rem;
-        text-align: left;
     }
     
-    .spotlight1, .patty-card {
-        grid-column: 1/2;
-        width: 85%;
+    #spotlight-cards {
+        display: flex;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        margin: .75rem;
     }
 
-    .spotlight2, .rocco-card {
-        grid-column: 2/3;
-        width: 85%;
-        margin-top: 50px;
+    #spotlight-cards p {
+        margin: 2rem;
+        padding: .75rem;
+    }
+    
+    #spotlight-cards a {
+        text-decoration: none;
+        font-size: .7rem;
     }
 
     #event {

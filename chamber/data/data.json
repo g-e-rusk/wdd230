@@ -12,6 +12,7 @@
             "contactLName": "Ford",
             "contactPhone": "(916) 555-9786",
             "businessLogo": "images/businesslogos/kidblock.jpg",
+            "logoAlt": "kids and blocks",
             "spotlightBlurb": "Miss Patty can't wait to welcome you to her Play School.  For children aged 2 to 5 years.  Patty's Play School will help your child learn the skills necessary for grade school and beyond.  Contact Ms. Patty at (916) 555-9786."
         },
      
@@ -27,6 +28,7 @@
             "contactLName": "Lake",
             "contactPhone": "(916) 555-2323",
             "businessLogo": "images/businesslogos/icecream.jpg",
+            "logoAlt": "ice cream",
             "spotlightBlurb": "Rocco's Ice Cream has been a staple of Downtown Elk Grove for 50 years!  Come try some today."
         },
         {
@@ -41,6 +43,7 @@
             "contactLName": "Smith",
             "contactPhone": "(916) 555-7745",
             "businessLogo": "images/businesslogos/dental.jpg",
+            "logoAlt": "dental logo",
             "spotlightBlurb": "Axel Dental is a full-service dental office.  Call today to book your appointment.  Main Office (916) 555-1643"
         },
         {
@@ -55,6 +58,7 @@
             "contactLName": "Durphy",
             "contactPhone": "(916) 555-3354",
             "businessLogo": "images/businesslogos/joesautoparts.jpg",
+            "logoAlt": "null",
             "spotlightBlurb": "null"
         },
         {
@@ -69,6 +73,7 @@
             "contactLName": "Green",
             "contactPhone": "(916) 555-8955",
             "businessLogo": "images/businesslogos/fashiongarden.png",
+            "logoAlt": "null",
             "spotlightBlurb": "null"
         },
         {
@@ -83,6 +88,7 @@
             "contactLName": "Patel",
             "contactPhone": "(916) 555-6934",
             "businessLogo": "images/businesslogos/indiankitchen.webp",
+            "logoAlt": "null",
             "spotlightBlurb": "null"
         },
         {
@@ -97,6 +103,7 @@
             "contactLName": "Johnson",
             "contactPhone": "(916) 555-1187",
             "businessLogo": "images/businesslogos/fosterhope.jpg",
+            "logoAlt": "cartoon kids surrounded by blue heart shape",
             "spotlightBlurb": "At Fostering Hope, we believe all children should have the ability to grow up in a positive and loving environment.  Consider becoming a foster parent today.  Call our office at (916) 555-1100."
         },
         {
@@ -111,6 +118,7 @@
             "contactLName": "Wellty",
             "contactPhone": "(916) 555-7411",
             "businessLogo": "images/businesslogos/premierdance.png",
+            "logoAlt": "null",
             "spotlightBlurb": "null"
         },
         {
@@ -125,6 +133,7 @@
             "contactLName": "Hammon",
             "contactPhone": "(916) 555-6330",
             "businessLogo": "images/businesslogos/eliteres.png",
+            "logoAlt": "house outline with business name",
             "spotlightBlurb": "Ethan Hammon is the #1 trusted source for all your real estate needs.  Contact me today!"
         },
         {
@@ -139,6 +148,7 @@
             "contactLName": "Stokes",
             "contactPhone": "(916) 555-4441",
             "businessLogo": "images/businesslogos/naturepreserve.png",
+            "logoAlt": "silhouette of flying birds and grass",
             "spotlightBlurb": "Located on the outskirts of Elk Grove, the Elk Grove Nature Preserve is a veritable treasure trove of species which call Elk Grove home.  With hiking trails, protected wetlands, small bridges and vegetation of all kinds, you will be surprised by all the wild animals, birds, fish and insect life.  Step away from the busy day-to-day and be prepared to be changed by all you see."
         },
         {
@@ -153,6 +163,7 @@
             "contactLName": "Loveacre",
             "contactPhone": "(916) 555-7110",
             "businessLogo": "images/businesslogos/kikicatering.jpg",
+            "logoAlt": "null",
             "spotlightBlurb": "null"
         },
         {
@@ -167,7 +178,8 @@
             "contactLName": "Bates",
             "contactPhone": "(916) 555-9111",
             "businessLogo": "images/businesslogos/brownstonemanor.png",
-            "spotlightBlurb": "Welcome to the inviting Brownstone Manor Hotel.  With luxery accomodations, we aspire to treat you like family.  Come visit us in Elk Grove today!"
+            "logoAlt": "hotel picture",
+            "spotlightBlurb": "Welcome to the inviting Brownstone Manor Hotel.  With luxury accomodations, we aspire to treat you like family.  Come visit us in Elk Grove today!"
         }
 
     ]

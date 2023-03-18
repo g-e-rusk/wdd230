@@ -142,58 +142,18 @@
         margin-bottom: 20px;
     }
 
-
     #spotlight {
-        display: flex;
-        flex-direction: column;
         grid-column: 3/4;
         grid-row: 1/4;
-        margin-right: 25px;
-        margin-bottom: 20px;
     }
 
-
-    .spotlight3, .spotlight1, .spotlight2 {
-        display: block;
-        margin-left: 15px;
+    #spotlight-cards {
+        display: flex;
+        flex-direction: column;
     }
 
-    .axel-card img {
-        width: 40%;
-        margin: 5px;
-        border-radius: 10px;
-        box-shadow: 2px 2px 2px #555;
-        
-    }
-    
-    .axel-card h5 {
-        font-family: 'Noto Sans Adlam Unjoined', sans-serif;
-    }
-    
-    .axel-card {
-        font-family: 'Bree Serif', 'serif';
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        border: 1px dashed black;
-        padding-bottom: 20px;
-        border-radius: 30px;
-        background-color:#EBE7DE;
-        color:rgb(61, 61, 61);
-        width: 80%;
-        
-    }
-
-    .rocco-card, .spotlight2 h5 {
-        margin-top: 0;
-    }
-
-    .rocco-card, .spotlight2 {
-        width: 80%;
-    }
-
-    .patty-card, .spotlight1 {
-        width: 85%;
+    #spotlight-cards p {
+        margin: .25rem;
     }
 
     #discover img {

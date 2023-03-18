@@ -2,7 +2,7 @@ function toggleMenu() {
     document.querySelector("#nav").classList.toggle("open");
 }
 
-const x = document.querySelector("#hamburgerBtn")
+const x = document.querySelector("#hamburgerBtn");
 x.onclick = toggleMenu;
 
 const datefieldUK = document.querySelector("#currentdate");

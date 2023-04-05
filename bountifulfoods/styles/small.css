@@ -377,6 +377,11 @@ main {
     cursor: pointer;
 }
 
+.aboutus-order a {
+    text-decoration: none;
+    color: #F0EEE1;
+}
+
 .schedule table th {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: .6rem;

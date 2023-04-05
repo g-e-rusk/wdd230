@@ -86,67 +86,59 @@ const loTemp3 = document.querySelector("#loTemp3");
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=33.158089&lon=-117.350594&units=imperial&appid=ebdaadb1a16dbc7d0637954f5c47ac64";
 
 async function forecastFetch() {
-    try {
         const response = await fetch(forecastUrl);
-        if (response.ok) {
             const data= await response.json();
-            console.log(data)
             displayForecastResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
 }
 
 forecastFetch();
 
-// const date = new Date();
-// let dayWeek = date.getDay();
-
-// let day = "";
-// switch(dayWeek) {
-//     case 0:
-//         day = "Sunday";
-//         break;
-//     case 1:
-//         day = "Monday";
-//         break; 
-//     case 2:
-//         day = "Tuesday";
-//         break;
-//     case 3:
-//         day = "Wednesday";
-//         break;
-//     case 4:
-//         day = "Thursday";
-//         break;
-//     case 5:
-//         day = "Friday";
-//         break;
-//     case 6:
-//         day = "Saturday";
-//         break;
-// }
-// const dayWeek1 = document.querySelector("#dayWeek1");
-// const dayWeek2 = document.querySelector("#dayWeek2");
-// const dayWeek3 = document.querySelector("#dayWeek3");
-//     dayWeek1.innerHTML = day;
-//     dayWeek2.innerHTML = day;
-//     dayWeek3.innerHTML = day;
-
 function displayForecastResults(forecastData) {
-    
+    day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const date = new Date();
+    let tomorrow = new Date(date);
+    let nextday = new Date(date);
+    let dayafter = new Date(date);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    nextday.setDate(nextday.getDate() + 2);
+    dayafter.setDate(dayafter.getDate() + 3);
 
-    const iconsrc = `https://openweathermap.org/img/w/${forecastData.weather[0].icon}.png`;
-    const desc = forecastData.weather[0].description;
+    const day1 = day[tomorrow.getDay()];
+    const day2 = day[nextday.getDay()];
+    const day3 = day[dayafter.getDay()];
 
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+    const dayWeek1 = document.querySelector("#dayWeek1").innerHTML = day1;
+    const dayWeek2 = document.querySelector("#dayWeek2").innerHTML = day2;
+    const dayWeek3 = document.querySelector("#dayWeek3").innerHTML = day3;
 
-    humidity.innerHTML = `<strong>Humidity:${forecastData.main.humidity.toFixed(0)}&percnt;</strong>`;
+
+    const iconsrc1 = `https://openweathermap.org/img/w/${forecastData.list[0].weather[0].icon}.png`;
+    const des1 = forecastData.list[0].weather[0].description;
+
+    dayCondition1.setAttribute('src', iconsrc1);
+    dayCondition1.setAttribute('alt', des1);
+    figCaption2.textContent = des1.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+
+    const iconsrc2 = `https://openweathermap.org/img/w/${forecastData.list[1].weather[0].icon}.png`;
+    const des2 = forecastData.list[1].weather[0].description;
+
+    dayCondition2.setAttribute('src', iconsrc2);
+    dayCondition2.setAttribute('alt', des2);
+    figCaption3.textContent = des2.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+
+    const iconsrc3 = `https://openweathermap.org/img/w/${forecastData.list[2].weather[0].icon}.png`;
+    const des3 = forecastData.list[2].weather[0].description;
+
+    dayCondition3.setAttribute('src', iconsrc3);
+    dayCondition3.setAttribute('alt', des3);
+    figCaption4.textContent = des3.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+
+    hiTemp1.innerHTML = `<strong>High: ${forecastData.list[0].main.temp_max.toFixed(0)}&#8457;</strong>`;
+    hiTemp2.innerHTML = `<strong>High: ${forecastData.list[1].main.temp_max.toFixed(0)}&#8457;</strong>`;
+    hiTemp3.innerHTML = `<strong>High: ${forecastData.list[2].main.temp_max.toFixed(0)}&#8457;</strong>`;
+    loTemp1.innerHTML = `<strong>Low: ${forecastData.list[0].main.temp_min.toFixed(0)}&#8457;</strong>`;
+    loTemp2.innerHTML = `<strong>Low: ${forecastData.list[1].main.temp_min.toFixed(0)}&#8457;</strong>`;
+    loTemp3.innerHTML = `<strong>Low: ${forecastData.list[2].main.temp_min.toFixed(0)}&#8457;</strong>`;
 }
 
 const juiceDisplay = document.querySelector("#juices");

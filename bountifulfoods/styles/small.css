@@ -233,7 +233,7 @@ main {
 }
 
 .weather-card {
-    padding: 2rem;
+    padding: .5rem;
     margin: 1rem;
     background-color: #29427B;
     border: 2px solid #F0EEE1;
@@ -253,10 +253,13 @@ main {
 .weather-card table tr td {
     font-family: 'Merriweather', serif;
     font-size: .9rem;
+    padding: 5px;
 }
 
+
 #border {
-    border-top:1px solid #F0EEE1;
+    border-top: 3px solid #F0EEE1;
+    font-weight: 700;
 }
 
 .drink-card {

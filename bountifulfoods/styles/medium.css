@@ -277,4 +277,21 @@
         font-size: 1.75rem;
         line-height: 3rem;
     }
+
+    .weather-card {
+        grid-column: 1/3;
+        padding: .5rem;
+        margin: 1rem;
+    }
+    
+    .weather-card table th {
+        font-size: 1.75rem;
+    }
+    
+    .weather-card table tr td {
+        font-size: 1.2rem;
+    }
 }
+
+
+

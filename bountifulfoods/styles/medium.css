@@ -1,0 +1,280 @@
+@media only screen and (min-width: 32rem) {
+      body {
+        max-width: 960px;
+      }
+    
+    .logo img {
+        width: 35%;
+    }
+    
+    .social img {
+        display: flex;
+        width: 6%;
+        margin-right: 95px;
+
+    }
+    
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    #nav {
+        display: none;
+    }
+    
+    
+    #hamburgerBtn {
+        font-size: 2.5rem;
+        padding: 2.25%;
+        margin-left: 50px;
+        margin-top: -50px;
+    }
+
+    #nav.open {
+        margin: 3% 5%;
+        width: 50%;
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    
+    #nav.open li:first-child {
+        font-size: 1.7rem;
+    }
+    
+    
+    .homecontact {
+        margin-top: 5%;
+        background-color: #FFC627;
+        width: 75%;
+        border: 2px dotted #D41D31;
+        text-align: center;
+        color: #333;
+        line-height: 1.25rem;
+        font-size: 1.2rem;
+        padding: 5%;
+        display: block;
+        font-family: 'Merriweather', serif;
+        margin: 5%;
+        box-shadow: 2px 2px 2px #333;
+        line-height: 2rem;
+    }
+    
+    .homecontact ul {
+        list-style: none;
+    }
+    
+    .homecontact li:first-child {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        text-decoration: underline;
+    }
+    
+    .homecontact a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    .homecontact li a {
+        display: block;
+    }
+    
+    .homecontact li a:hover {
+        background-color:#D41D31;
+        color: #F0EEE1;
+        cursor: pointer;
+    }
+    
+    .order h1 {
+        font-size: 4rem;
+        grid-column: 1/3;
+        margin-left: -30%;
+        margin-top: 25%;
+    }
+    
+    .area {
+        margin-top: 55%;
+        margin-left: 3%;
+        margin-right: 8%;
+        grid-column: 1/3;
+    }
+    
+    .area h2 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        padding: 20px;
+    }
+    
+    .area p {
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 2rem;
+        padding: 20px;
+    
+    }
+    
+    .area img {
+        margin: 20px;
+    }
+    
+    #readBtn {
+        padding: 3px;
+        background-color: #D41D31;
+        font-family: 'Merriweather', serif;
+        color: #F0EEE1;
+        margin: 7px;
+    }
+    
+    #more {
+        display: none;
+    }
+    
+    .weather-card {
+        padding: 5%;
+        margin: 5% 5%;
+    }
+    
+    .weather-card table.th {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .drink-card {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        padding: 2%;
+        margin: 2% 2%;
+    }
+    
+    .drink-card img {
+        width: 40%;
+        height:60%;
+    }
+    
+    .drink-card h5 {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2rem;
+    }
+    
+    .drink-card p.juiceNum {
+        font-size: 1.2rem;
+    }
+
+    .drink-card p.rewards {
+        font-size: 1.2rem;
+    }
+
+    #juices, #rewards {
+        font-size: 1.5rem;
+    }
+    
+    .homecontact {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .aboutus {
+        grid-column: 1/3;
+        padding: 1rem;
+        margin: 2% 3%;
+    }
+    
+    .aboutus h3 {
+        font-size: 1.2rem;
+    }
+    
+    .aboutus p {
+        font-family: 'Merriweather', serif;
+        font-size: 1rem;
+    }
+    
+    .aboutus img {
+        border: 5px solid #F0EEE1;
+        box-shadow: 2px 2px 2px #333;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #contBtn {
+        padding: 3px;
+        background-color: #D41D31;
+        font-family: 'Merriweather', serif;
+        color: #F0EEE1;
+        margin: 7px;
+    }
+    
+    #readmore {
+        display: none;
+    }
+    
+    .aboutus-order {
+        font-size: 2rem;
+        grid-column: 1/3;
+    }
+
+    .schedule table {
+        grid-column: 1/3;
+        grid-row: 4/5;
+        margin: 2% 2%;
+        padding: 1rem;
+        width: 195%;
+        line-height: .85rem;
+    }
+    
+    .schedule table th {
+        font-size: 1rem;
+        padding: 5px;
+        
+    }
+    
+    .schedule table th:nth-child(1) {
+        font-size: 1.5rem;
+    }
+    
+    .schedule table td {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    
+    .schedule tr {
+        text-align: center;
+    }
+    
+    .schedule tr, .schedule td {
+        border: 1px solid #29427B;
+    }
+
+    .contactmap {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .contactmap h4 {
+        font-size: 1.75rem;
+        padding: 15px;
+    }
+    
+    .contactmap iframe {
+        width: 97%;
+        margin: 2% 5%;
+    }
+
+    .aboutus-contact {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        height: 50%;
+        margin-top: 35%;
+    }
+
+    .aboutus-contact {
+        line-height: 2rem;
+        font-size: 1.25rem;
+        padding: 5%;
+    }
+    
+    .aboutus-contact li:first-child {
+        font-size: 1.75rem;
+        line-height: 3rem;
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bountiful Foods, LLC | Premium Produce and Juices</title>
+    <meta name="author" content="Geri Rusk">
+    <meta name="description" content="Providing fresh premuim produce, juices, and snacks to the Southern California coastal communities is the goal of Bountiful Foods, LLC.">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html"><img src="images/bountifulfood_logo.png" alt="Bountiful Foods, LLC logo"></a>
+    
+    <nav class="social">
+        <a href="https://www.facebook.com"><img src="images/fblogo.png" alt ="Facebook logo link"></a>
+        <a href="https://www.instagram.com"><img src="images/iglogo.png" alt ="Instagram logo link"></a>
+        <a href="https://www.whatsapp.com"><img src="images/whatsapplogo.png" alt ="WhatsApp logo link"></a>
+    </nav>
+</div>
+</header>
+<main>
+        <div class="navigation">
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                <ul id="nav">
+                    <li>Menu</li>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="fresh.html">Order Here</a></li>
+                </ul>
+            </div>
+        
+        <div class="order">
+        <h1><a href="fresh.html"></a>Order Here</h1>
+        </div>
+
+        <div class="area">
+            <h2>The Southern California Coast</h2>
+            <p>Located next to the Pacific Ocean, the coastal area from Los Angeles to San Diego is breathtakingly beautiful.  From endless sunsets over the horizons, to miles and miles of sandy white beaches, the coastal area<span id="dots">...</span><span id="more"> boasts natural beauty. 
+            <img src="images/sunset.jpg" alt="sunset over the Pacific Ocean" loading="lazy" height="300" width="500"><br>
+            With average daily temperatures ranging from 60&deg;F to 75&deg;F, the Southern California beaches are a magnent for locals and tourists alike. Enjoying so many attractions, wonderful dining experiences, unique shopping experiences, and the occasional celebrity sighting, the coastal area of Southern California is a picturesque venutre of health and convenience.
+            <img src="images/beach.webp" alt="picture of a beach and coastline" loading="lazy" height="300" width="500"><br>
+            The Mediterranean climate affords the region the ability to cultivate and produce many subtropical fruits including cherimoyas, guavas, avocados, dates, sapotes, citrus fruits and a wide variety of vegetables.  
+            <img src="images/oranges.webp" alt="tree with oranges on it" loading="lazy" height="500" width="500"><br>
+            At <strong>Bountiful Foods, LLC</strong>, we are pleased to partner with many local farmers to bring the freshest produce to the public.  By offering unique and convenient offerings from fruit cups, to made-to-order juices, Bountiful Foods, LLC seeks to be the go-to for all of our customers produce needs.</span></p>
+            <button onclick="readFunction()" id="readBtn">Read more</button>
+        </div>
+
+        
+        <div class="weather-card">
+        <table style="width:100%">
+            <tr>
+                <th colspan="3">Local Forecast</th>
+            </tr>
+            <tr>
+                <td><strong>Current Temp:</strong></td>
+                <td><img src="<span id="currentCondition">" alt=""></span></td>
+                <td><strong>Humidity:</strong></td>
+            </tr>
+            <tr>
+                <td><span id="currentTemp">&#8451;F</span></td>
+                <td><strong><span id="figCaption1"></span></strong></td>
+                <td><span id="humidity">%</span></td>
+            </tr>
+
+            <tr id="border">
+                <td><span id="dayWeek1"></span></td>
+                <td><span id="dayWeek2"></span></td>
+                <td><span id="dayWeek3"></span></td>
+            </tr>
+            <tr>
+                <td><span id="dayCondition1"></span><span id="figCaption2"></span></td>
+                <td><span id="dayCondition2"></span><span id="figCaption3"></span></td>
+                <td><span id="dayCondition3"></span><span id="figCaption4"></span></td>
+            </tr>
+            <tr>
+                <td><span id="hiTemp1"></span></td>
+                <td><span id="hiTemp2"></span></td>
+                <td><span id="hiTemp3"></span></td>
+            </tr>
+            <tr>
+                <td><span id="loTemp1"></span></td>
+                <td><span id="loTemp2"></span></td>
+                <td><span id="loTemp3"></span></td>
+            </tr>
+        </table>
+        </div>
+
+        <div class="drink-card">
+        <h5>Your Rewards:</h5>
+        <img src="images/juice.png" alt="juice">
+        <p class="juiceNum">You have ordered: 
+           <br> <span id="juices"> juices</span></p><br>
+        <p class="rewards">You have <span id="rewards">free drink(s).</span></p>
+        </div>
+        
+        <div class="homecontact">
+                    <ul>
+                        <li>Contact Information</li>
+                        <li>Bountiful Foods, LLC</li>
+                        <li>5620 Paseo Del Norte</li>
+                        <li>Carlsbad, CA 92008</li>
+                        <li>📞Phone: (760) 555-9000</li>
+                        <li><a href=mailto:info@bountifulfoodsCA.com>📫Email Us</a></li>
+                        <li><a href="https://goo.gl/maps/RRJqSLdsJv1ocHhT6">📍Find Us</a></li>
+                    </ul>
+                </div>
+
+</main>
+<hr>
+<footer>
+    <div class="footer">
+        <p>&copy;<span id="currentyear"></span> Bountiful Foods, LLC</p>
+        <p>Geri Rusk</p>
+        <p>WDD 230 Final Project</p>
+        <a href="attributions.html">Attribution Page</a>
+        <p>Last Modified: <span id="date"></span></p>
+        </div>
+</footer>
+</body>
+</html>

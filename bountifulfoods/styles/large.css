@@ -1,0 +1,260 @@
+@media only screen and (min-width: 64rem) {
+      body {
+        max-width: 1600px;
+      }
+    
+    .logo img {
+        width: 25%;
+    }
+    
+    .social img {
+        display: flex;
+        justify-content: space-evenly;
+        width: 3%;
+        float: right;      
+    }
+    
+    main {
+        display: grid;
+    }
+    
+    #nav {
+        display: block;
+        list-style: none;
+        font-family: 'Merriweather', serif;
+        padding: 3%;
+        margin-left: 5%;
+        box-shadow: 2px 2px 2px #333;
+        margin-top: -5%;
+        background-color: #FFC627;
+        width: 50%;
+        border: 2px dotted #D41D31;
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    #nav li:first-child {
+        font-size: 3rem;
+        line-height: 3rem;
+        text-decoration: underline;
+    }
+
+    #nav a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    #nav li a {
+        display: block;
+    }
+
+    #nav li a:hover {
+        background-color:#D41D31;
+        color: #F0EEE1;
+        cursor: pointer;
+    }
+
+    #nav li.active a {
+        color: #F0EEE1;
+        background-color: #29427B;
+    }
+
+    #nav li.active a:hover {
+        color: #F0EEE1;
+        background-color: #D41D31;
+    } 
+
+    #hamburgerBtn, #contactBtn {
+        display: none;
+    }
+    
+    .homecontact {
+        line-height: 3rem;
+        font-size: 2rem;
+        padding: 5%;
+    }
+    
+    .homecontact li:first-child {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    .order h1 {
+        font-size: 3rem;
+        float: left;
+        margin-left: 5%;
+        margin-top: -1%;
+    }
+    
+    .area {
+        margin: 3%;
+    }
+    
+    .area h2 {
+        font-size: 2rem;
+        line-height: 1.5rem;
+        padding: 20px;
+    }
+    
+    .area p {
+        font-size: 1.25rem;
+        text-align: center;
+        line-height: 2rem;
+        padding: 20px;
+    
+    }
+    
+    .area img {
+        margin: 20px;
+    }
+    
+    #readBtn {
+        padding: 3px;
+        background-color: #D41D31;
+        font-family: 'Merriweather', serif;
+        color: #F0EEE1;
+        margin: 7px;
+    }
+    
+    #more {
+        display: none;
+    }
+    
+    .weather-card {
+        padding: 5%;
+        margin: 5% 5%;
+    }
+    
+    .weather-card table.th {
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1rem;
+        float: left;
+    }
+    
+    .drink-card {
+        padding: 2%;
+        width: 90%;
+    }
+    
+    .drink-card img {
+        width: 40%;
+        height:60%;
+    }
+    
+    .drink-card h5 {
+        font-size: 2.5rem;
+    }
+    
+    .drink-card p.juiceNum {
+        font-size: 2rem;
+    }
+
+    .drink-card p.rewards {
+        font-size: 2rem;
+    }
+
+    #juices {
+        line-height: 3rem;
+    }
+
+    #juices, #rewards  {
+        font-size: 2rem;
+    }
+    
+    .aboutus {
+        grid-column: 1/3;
+        padding: 1rem;
+        margin: 2% 3%;
+    }
+    
+    .aboutus h3 {
+        font-size: 2rem;
+    }
+    
+    .aboutus p {
+        font-size: 1.5rem;
+        line-height: 3rem;
+    }
+    
+    .aboutus img {
+        border: 5px solid #F0EEE1;
+        box-shadow: 2px 2px 2px #333;
+        width: 30%;
+        height: 30%;
+        float: right;
+    }
+    
+    #contBtn {
+        padding: 3px;
+        background-color: #D41D31;
+        font-family: 'Merriweather', serif;
+        color: #F0EEE1;
+        margin: 7px;
+    }
+    
+    #readmore {
+        display: none;
+    }
+    
+    .aboutus-order {
+        font-size: 2rem;
+        grid-column: 2/3;
+        grid-row: 3/4;
+        height: 10%;
+        margin-top: 30%;
+    }
+
+    .schedule table {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        width: 100%;
+        padding: 10px;
+        margin-left: 6%;
+        box-shadow: 3px 3px 2px #333;;
+    }
+    
+    .contactmap {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    
+    .contactmap h4 {
+        font-size: 1.75rem;
+        padding: 15px;
+        margin-left: 3%;
+    }
+    
+    .contactmap iframe {
+        width: 97%;
+        height: 85%;
+        margin: 2% 5%;
+    }
+
+    .aboutus-contact {
+        grid-column: 2/3;
+        grid-row: 5/6;
+        height: 60%;
+        margin-top: 15%;
+    }
+
+    .aboutus-contact {
+        line-height: 3rem;
+        font-size: 1.5rem;
+        padding: 5%;
+    }
+    
+    .aboutus-contact li:first-child {
+        font-size: 2rem;
+        line-height: 4rem;
+    }
+
+    .footer {
+        background-color: #29427B;
+        font-size: .9rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}

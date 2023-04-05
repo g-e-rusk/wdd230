@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Bountiful Foods, LLC | Premium Produce and Juices</title>
+    <meta name="author" content="Geri Rusk">
+    <meta name="description" content="Order premium produce or specialty blended drinks from Bountiful Foods, LLC">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/bountifulfood_logo.png" alt="Bountiful Foods, LLC logo"></a>
+        
+        <nav class="social">
+            <a href="https://www.facebook.com"><img src="images/fblogo.png" alt ="Facebook logo link"></a>
+            <a href="https://www.instagram.com"><img src="images/iglogo.png" alt ="Instagram logo link"></a>
+            <a href="https://www.whatsapp.com"><img src="images/whatsapplogo.png" alt ="WhatsApp logo link"></a>
+        </nav>
+    </div>
+    </header>
+    <main>
+            <div class="navigation">
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+                    <ul id="nav">
+                        <li>Menu</li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+                        <li class="active"><a href="fresh.html">Order Here</a></li>
+                    </ul>
+            </div>
+
+            <div id="orderpage">
+                <form>
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <label class="top">First Name* <input type="text" name="fname" required></label>
+                        <label class="top">Last Name <input type="text" name="fname"></label>
+                        <label class="top">Email* <input type="email" name="email" placeholder="name@businessname.com" required></label>
+                        <label class="top">Cell Phone #* <input type="tel" name="phone" placeholder="(123) 555-1234" required></label>
+                        <label class="top" for="locations">Please select your pickup location:*</label>
+                        <select class="top" id="locations" name="locations" required>
+                            <option value="select">Select One:</option>
+                            <option value="Carlsbad Store">Carlsbad Store</option>
+                            <option value="Dana Point">Dana Point</option>
+                            <option value="Encinitas">Encinitas</option>
+                            <option value="Huntington Beach">Huntington Beach</option>
+                            <option value="Imperial Beach">Imperial Beach</option>
+                            <option value="La Jolla">La Jolla</option>
+                            <option value="Laguna Beach">Laguna Beach</option>
+                            <option value="Long Beach">Long Beach</option>
+                            <option value="Manhattan Beach">Manhattan Beach</option>
+                            <option value="Newport Beach">Newport Beach</option>
+                            <option value="Oceanside">Oceanside</option>
+                            <option value="San Diego">San Diego</option>
+                            <option value="Santa Monica">Santa Monica</option>
+                        </select>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Blended Drink</legend>
+                        <label class="sbs" for="fruit1">Please select a fruit:</label>
+                            <select id="fruit1" name="fruit1"></select>
+                        <label class="sbs" for="fruit2">Please select a fruit:</label>
+                            <select id="fruit2" name="fruit2"></select>
+                        <label class="sbs" for="fruit3">Please select a fruit:</label>
+                            <select id="fruit3" name="fruit3"></select>
+                    </fieldset>
+        
+                    <fieldset>
+                        <legend>Special Instructions</legend>
+                        <label class="top">Please specify any special instructions for your order:<br> <textarea id="order" name="order" rows="4" cols="30"></textarea></label>
+                    </fieldset>
+        
+                    <input type="hidden" id="formSubmit" name="formSubmit" value="currentdate">
+        
+                    <input type="submit" value="Place My Order" class="submitBtn">
+                </form>
+
+                <div id="orderinfo"></div>
+                <div id="nutrition"></div>
+
+                <div class="fresh-contact">
+                    <ul>
+                        <li>Contact Information</li>
+                        <li>Bountiful Foods, LLC</li>
+                        <li>5620 Paseo Del Norte</li>
+                        <li>Carlsbad, CA 92008</li>
+                        <li>📞Phone: (760) 555-9000</li>
+                        <li><a href=mailto:info@bountifulfoodsCA.com>📫Email Us</a></li>
+                        <li><a href="https://goo.gl/maps/RRJqSLdsJv1ocHhT6">📍Find Us</a></li>
+                    </ul>
+                </div>
+</main>
+<hr>
+<footer>
+    <div class="footer">
+        <p>&copy;<span id="currentyear"></span> Bountiful Foods, LLC</p>
+        <p>Geri Rusk</p>
+        <p>WDD 230 Final Project</p>
+        <a href="attributions.html">Attribution Page</a>
+        <p>Last Modified: <span id="date"></span></p>
+        </div>
+</footer>
+
+<script src="scripts/fresh.js"></script>
+</body>
+</html>

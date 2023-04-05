@@ -184,6 +184,11 @@ main {
     cursor: pointer;
 }
 
+.order a {
+    text-decoration: none;
+    color: #F0EEE1;
+}
+
 .area {
     background-color: #F0EEE1;
     padding: 2%;

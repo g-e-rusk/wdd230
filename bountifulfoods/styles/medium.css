@@ -363,7 +363,7 @@
         max-width: 40rem;
      }
     
-     #submitBtn {
+     form input.submitBtn {
         border: none;
         background-color: #29427B;
         color: #F0EEE1;

@@ -590,7 +590,7 @@ form label.sbs {
     width: 100%;
  }
 
- #submitBtn {
+ form input.submitBtn {
     border: none;
     background-color: #29427B;
     color: #F0EEE1;

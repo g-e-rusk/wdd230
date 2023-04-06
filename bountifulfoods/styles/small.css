@@ -584,7 +584,13 @@ form label.sbs {
     max-width: 19rem;
  }
 
- form input.submitBtn {
+ #order {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem; 
+    width: 100%;
+ }
+
+ #submitBtn {
     border: none;
     background-color: #29427B;
     color: #F0EEE1;
@@ -596,7 +602,35 @@ form label.sbs {
     cursor: pointer;
     width: 96%;
     max-width: 17rem;
+    text-shadow: 2px 2px 1px #333;
+    box-shadow: 2px 2px 2px #333;
  }
+
+#orderinfo, #nutrition {
+    background-color: #83995B;
+    color: #F0EEE1;
+    margin: .7rem;
+    padding: .5rem;
+    line-height: 1.5rem;
+    border-radius: .25rem;
+    border: 2px dashed #F0EEE1;
+}
+
+#orderinfo h4, #nutrition h4 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px #333;
+}
+
+#orderinfo p, #nutrition p {
+    font-family: 'Merriweather', serif;
+    font-size: 1rem;
+}
+
+#orderinfo p span {
+    border: transparent;
+}
 
 footer {
     font-family: 'Merriweather Sans', sans-serif;

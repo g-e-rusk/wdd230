@@ -255,7 +255,83 @@
         padding: .5rem;
         margin: 1rem;
     }
+
+    form {
+        width: 55%;
+    }
     
+    form label.top input, form label.top select {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 75%;
+        max-width: 40rem;
+    }
+    
+    #locations {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .35rem;
+        color: #555;
+        width: 100%;
+        max-width: 40rem;
+    }
+    
+    form label.sbs {
+        display: block;
+        padding: .75rem;
+        color: #555;
+        font-family: 'Merriweather', serif;
+        font-size: 1rem;
+     }
+    
+     #fruit1, #fruit2, #fruit3 {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .35rem;
+        color: #555;
+        width: 100%;
+        max-width: 40rem;
+     }
+    
+     #submitBtn {
+        border: none;
+        background-color: #29427B;
+        color: #F0EEE1;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 96%;
+        max-width: 17rem;
+        text-shadow: 2px 2px 1px #333;
+        box-shadow: 2px 2px 2px #333;
+     }
+    
+     #orderinfo {
+        width: 40%;
+        float: right;
+        margin-top: -66%;
+     }
+
+     #nutrition {
+        width: 40%;
+        float: right;
+        margin-top: -36.5%;
+     }
+
 
     .footer {
         background-color: #29427B;

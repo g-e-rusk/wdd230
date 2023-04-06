@@ -291,6 +291,105 @@
     .weather-card table tr td {
         font-size: 1.2rem;
     }
+
+    #orderpage {
+        grid-column: 1/3;
+    }
+
+    form fieldset {
+        margin: 1rem 1rem;
+        padding: .5rem 2%;
+        background-color: #e9e8e0e7;
+    }
+    
+    form legend {
+        color: #29427B;
+        padding: 0 .5rem;
+        margin: 1rem 1rem;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 2rem;
+        text-shadow: 1px 1px 1px #F0EEE1;
+    }
+    
+    form label.top {
+        display: block;
+        padding-top: .65rem;
+        color: #29427B;
+        font-family: 'Merriweather', serif;
+        font-size: 1rem;
+    }
+    
+    form label.top input, form label.top select {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .75rem;
+        color: #555;
+        width: 96%;
+        max-width: 40rem;
+    }
+    
+    #locations {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .35rem;
+        color: #555;
+        width: 100%;
+        max-width: 40rem;
+    }
+    
+    form label.sbs {
+        display: block;
+        padding: .75rem;
+        color: #555;
+        font-family: 'Merriweather', serif;
+        font-size: 1rem;
+     }
+    
+     #fruit1, #fruit2, #fruit3 {
+        display: block;
+        font-family: 'Merriweather', serif;
+        font-size: 1.25rem; 
+        border: 1px solid #29427B;
+        border-radius: 4px;
+        padding: .35rem;
+        color: #555;
+        width: 100%;
+        max-width: 40rem;
+     }
+    
+     #submitBtn {
+        border: none;
+        background-color: #29427B;
+        color: #F0EEE1;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 96%;
+        max-width: 17rem;
+        text-shadow: 2px 2px 1px #333;
+        box-shadow: 2px 2px 2px #333;
+     }
+    
+     #orderinfo {
+        grid-column: 1/2;
+        width: 45%;
+     }
+
+     #nutrition {
+        grid-column: 2/3;
+        width: 45%;
+        float: right;
+        margin-top: -36.5%;
+     }
 }
 
 

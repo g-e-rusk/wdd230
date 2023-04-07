@@ -79,7 +79,7 @@
         
                     <fieldset>
                         <legend>Special Instructions</legend>
-                        <label class="top">Special instructions for your order:<br> <textarea id="order" name="order" rows="4" cols="30"></textarea></label>
+                        <label class="top">Special instructions for your order:<br> <textarea id="orderInstructions" name="order" rows="4" cols="30"></textarea></label>
                     </fieldset>
                     <input type="button" class="submitBtn" onclick="orderFunction()" value="Place My Order">
                 </form>
@@ -87,22 +87,22 @@
 
                 <div id="orderinfo">
                     <h4>Your Order:</h4>
-                    <p class="fname">Name: <span id="fname"></span></p>
-                    <p class="email">Email: <span id="email"></span></p>
-                    <p class="phone">Cell: <span id="phone"></span></p>
-                    <p class="store">Pickup Location: <span id="store"></span></p>
-                    <p class="fruits">Selected Fruits:<br>
-                    <span id="fruit1"></span>, <span id="fruit2"></span>, <span id="fruit3"></span></p>
-                    <p class="instruct">Special Instructions: <br>
-                    <span id="instruct"></span></p>
+                    <p>Name: <span id="order_fname"></span></p>
+                    <p>Email: <span id="order_email"></span></p>
+                    <p>Cell: <span id="order_phone"></span></p>
+                    <p>Pickup Location: <span id="order_store"></span></p>
+                    <p>Selected Fruits:<br>
+                    <span id="order_fruit1"></span>, <span id="order_fruit2"></span>, <span id="order_fruit3"></span></p>
+                    <p>Special Instructions: <br>
+                    <span id="order_instruct"></span></p>
                 </div>
                 <div id="nutrition">
                     <h4>Nutritional Information:</h4>
-                    <p class="calories">Calories: <span id="calories"></span></p>
-                    <p class="fat">Fat: <span id="fat"> g</span></p>
-                    <p class="protein">Protein: <span id="protein"> g</span></p>
-                    <p class="carbs">Carbohydrates: <span id="carbs"> g</span></p>
-                    <p class="sugar">Sugar: <span id="sugar"> g</span></p>
+                    <p>Calories: <span id="order_calories"></span></p>
+                    <p>Fat: <span id="order_fat"> g</span></p>
+                    <p>Protein: <span id="order_protein"> g</span></p>
+                    <p>Carbohydrates: <span id="order_carbs"> g</span></p>
+                    <p>Sugar: <span id="order_sugar"> g</span></p>
                 </div>
 
                 <div class="fresh-contact">
